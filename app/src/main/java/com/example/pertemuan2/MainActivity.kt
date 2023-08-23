@@ -18,12 +18,38 @@ class MainActivity : AppCompatActivity() {
 //        buat tanpa binding
 //        val btnToast = findViewById<Button>(R.id.btn_toast)
 
+
         with(binding){
             txtNumber.text = number.toString()
+           // ubah bg color
+
+            txtNumber.setBackgroundResource(R.color.purple_200)
+
+            val email = "admin"
+            val pass = "pw123"
+
+            btnGetText.setOnClickListener{
+                val valueText = editEmail.text.toString()
+
+                // show toast
+                Toast.makeText(
+                    this@MainActivity,
+                    valueText,
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+
             btnCount.setOnClickListener(){
                 number++
                 txtNumber.text = number.toString()
+                if(number % 2 == 0){
+                    txtNumber.setBackgroundResource(R.color.purple_200)
+                }else{
+                    txtNumber.setBackgroundResource(R.color.purple_500)
+                }
             }
+
             btnToast.setOnClickListener{
                 Toast.makeText(this@MainActivity, number.toString(), Toast.LENGTH_SHORT).show()
             }
