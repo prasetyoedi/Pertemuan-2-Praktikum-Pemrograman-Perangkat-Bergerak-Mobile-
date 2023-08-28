@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">Pertemuan 2</string>
-    <string name="toast">TOAST</string>
-    <string name="_0">0</string>
-<!--    <string name="_1">1</string>-->
-    <string name="count">Tambah</string>
+    <string name="app_name">Tugas Pertemuan 2</string>
+    <string name="login">Login</string>
+    <string name="username">Username :</string>
+    <string name="passwd">Password :</string>
+    <string name="button">Log In</string>
+    <string name="inputUsername">Masukkan Username</string>
+    <string name="inputPasswd">Masukkan Password</string>
+    <string name="loginGagal">Login Gagal</string>
+    <string name="loginSukses">Login Sukses</string>
 </resources>
